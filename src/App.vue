@@ -5,45 +5,29 @@
     <!-- Secondo Componente -->
     <ContentComponent />
     <!-- Terzo Componente -->
-    <div class="h_main bordo w-100 bg-info" id="site_main">
-      <!-- Container principale -->
-      <div class="container h-100">
-        <div class="row m-0 w-100 bordo h-100 bg-danger">
-          <h3>Qui 5 Col </h3>
-        </div>
-      </div>
-    </div>
+    <MainComponent />
     <!-- Quarto Componente - -->
-    <div class="h_upper_footer bordo w-100 bg-info" id="upper_footer">
-      <!-- Container principale -->
-      <div class="container h-100">
-        <div class="row m-0 w-100 bordo h-100 bg-danger">
-          <h3>Qui tutto il footer superiore </h3>
-        </div>
-      </div>
-    </div>
-    <!-- Quinto Componente - Footer Inferiori -->
-    <div class="h_under_footer bordo w-100 bg-info" id="under_footer">
-      <!-- Container principale -->
-      <div class="container h-100">
-        <div class="row m-0 w-100 bordo h-100 bg-danger">
-          <h3>Qui tutto il footer inferiore </h3>
-        </div>
-      </div>
-    </div>
+    <UpperFooterComponent />
+    <!-- Quinto Componente -->
+    <UnderFooterComponent />
   </div>
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import ContentComponent from '@/components/ContentComponent.vue'
-
+import MainComponent from '@/components/MainComponent.vue'
+import UpperFooterComponent from '@/components/UpperFooterComponent.vue'
+import UnderFooterComponent from '@/components/UnderFooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
+    MainComponent,
+    UpperFooterComponent,
+    UnderFooterComponent
   }
 }
 </script>
