@@ -1,21 +1,9 @@
 <template>
   <div id="app">
     <!-- Primo Componente -->
-    <div class="h_header w-100 bg-info bordo" id="site_header">
-      <!-- Container principale -->
-      <div class="container h-100">
-        <div class="row m-0 w-100 bordo h-100 bg-danger"></div>
-      </div>
-    </div>
+    <HeaderComponent />
     <!-- Secondo Componente -->
-    <div class="h_content bordo w-100 bg-info" id="site_content">
-      <!-- Container principale -->
-      <div class="container h-100">
-        <div class="row m-0 w-100 bordo h-100 bg-danger">
-          <h3>| Content Goes Here | </h3>
-        </div>
-      </div>
-    </div>
+    <ContentComponent />
     <!-- Terzo Componente -->
     <div class="h_main bordo w-100 bg-info" id="site_main">
       <!-- Container principale -->
@@ -43,22 +31,23 @@
         </div>
       </div>
     </div>
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from '@/components/HeaderComponent.vue'
+import ContentComponent from '@/components/ContentComponent.vue'
 
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    HeaderComponent,
+    ContentComponent
   }
 }
 </script>
+
 
 <style lang="scss">
 // Common rules 
