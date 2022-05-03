@@ -37,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 // Altezza fissa dell'header
 .h_header {
-    height: 100px;
+    height: 10%;
 }
 
 // Background Header
@@ -63,12 +63,13 @@ export default {
     li {
         padding-left: 0;
         margin-bottom: 0;
-        // border-bottom: 1px solid black;
     }
     a {
         text-decoration: none;
         color: inherit;
         font-size: 0.8rem;
+        padding-bottom: 2.3rem;
+        // border-bottom: 5px solid rgb(61, 246, 0);
     }
 }
 

@@ -23,7 +23,7 @@ export default {
 
 /*#region Content */
 .h_content {
-    height: 130px;
+    height: 15%;
 }
 
 // Colonna iniziale di contenimento

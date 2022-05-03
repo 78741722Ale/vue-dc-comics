@@ -49,26 +49,21 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100vw;
+  height: 100vh;
 }
 // Qui do stile ma poi lo sposto nei componenti singoli
 // Per ora diviso in region, poi da spostare in partials
 
-/*#region Main */
-.h_main {
-  height: 155px;
-}
-
-/*#endregion */
-
 /*#region Upper Footer */
 .h_upper_footer {
-  height: 370px;
+  height: calc(100% - 50%);
 }
 /*#endregion */
 
 /*#region Under Footer */
 .h_under_footer {
-  height: 100px;
+  height: 10%;
 }
 
 /*#endregion */
