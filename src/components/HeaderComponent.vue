@@ -40,6 +40,11 @@ export default {
     height: 100px;
 }
 
+// Background Header
+.bg_header {
+    background-color: #FFFFFF;
+}
+
 // Dimensioni del logo
 .col-2 {
     // Annidamento
@@ -66,9 +71,5 @@ export default {
         font-size: 0.8rem;
     }
 }
-
-
-
-
 
 </style>

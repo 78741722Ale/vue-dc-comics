@@ -32,8 +32,6 @@ export default {
 }
 </script>
 
-
-
 <style lang="scss">
 // Common rules 
 * {
@@ -54,12 +52,6 @@ export default {
 }
 // Qui do stile ma poi lo sposto nei componenti singoli
 // Per ora diviso in region, poi da spostare in partials
-
-/*#region Content */
-.h_content {
-  height: 130px;
-}
-/*#endregion */
 
 /*#region Main */
 .h_main {
