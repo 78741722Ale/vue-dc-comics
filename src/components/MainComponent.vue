@@ -65,7 +65,6 @@
     </div>
 </template>
 
-
 <script>
 export default {
     name: 'MainComponent'
@@ -79,7 +78,6 @@ export default {
   background-color: #0282F9
 }
 
-
 // Altezza
 .h_main {
   height: 15%;
@@ -88,7 +86,6 @@ export default {
 // Col-3 
 .col-3 {
   // Annidamento
-
   img {
     width: 45px;
     height: 55px;
@@ -112,10 +109,5 @@ export default {
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
 
 </style>

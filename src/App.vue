@@ -57,15 +57,10 @@ export default {
 
 /*#region Upper Footer */
 .h_upper_footer {
-  height: calc(100% - 50%);
+    height: calc(100% - 50%);
 }
 /*#endregion */
 
-/*#region Under Footer */
-.h_under_footer {
-  height: 10%;
-}
 
-/*#endregion */
 
 </style>
