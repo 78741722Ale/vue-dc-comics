@@ -75,8 +75,11 @@
 
 <script>
 export default {
-    name: 'UpperFooterComponent'
+    name: 'UpperFooterComponent',
+    
 }
+
+
 </script>
 
 <style lang="scss" scoped>

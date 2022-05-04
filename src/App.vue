@@ -33,34 +33,8 @@ export default {
 </script>
 
 <style lang="scss">
-// Common rules 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.bordo {
-  border: 2px solid black;
-}
-// Main container (equivale al body)
-#app {
-  font-family: Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  width: 100vw;
-  height: 1000px;
-}
-// Qui do stile ma poi lo sposto nei componenti singoli
-// Per ora diviso in region, poi da spostare in partials
 
-/*#region Upper Footer */
-.h_upper_footer {
-    height: calc(100% - 50%);
-}
-/*#endregion */
-
-
+// importazione del file style.scss
+@import "@/assets/sass/style.scss" ;
 
 </style>

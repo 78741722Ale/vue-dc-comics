@@ -12,8 +12,9 @@ module.exports = {
       // but when configuring the `prependData` option
       // `scss` syntax requires an semicolon at the end of a statement, while `sass` syntax requires none
       // in that case, we can target the `scss` syntax separately using the `scss` option
+      // Questo è il percorso fondamentale per strutturare in scss
       scss: {
-        additionalData: `@import "~@/variables.scss";`
+        additionalData: `@import "@/assets/sass/style.scss";`
       },
     }
   }

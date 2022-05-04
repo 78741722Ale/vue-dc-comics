@@ -11,16 +11,7 @@
                 <!-- Navbar -->
                 <div class="col-8 h-100">
                     <ul class="d-flex h-100 flex-row align-items-center justify-content-evenly">
-                        <li><a href="#">CHARACTERS</a></li>
-                        <li><a href="#">COMICS</a></li> 
-                        <li><a href="#">MOVIES</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">GAMES</a></li> 
-                        <li><a href="#">COLLECTIBLES</a></li>
-                        <li><a href="#">VIDEOS</a></li> 
-                        <li><a href="#">FANS</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">SHOP</a></li> 
+                        <li :href="item.href" v-for="item in headMenu" :key="item.id"> <a :class="item.text === 'Comics' ? 'active' : ''">{{item.text}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,7 +21,74 @@
 
 <script>
 export default {
-    name: 'HeaderComponent'
+    name: 'HeaderComponent',
+    // Inserimento di Data
+    data() {
+      return {
+        headMenu : [
+          // Primo Link
+          {
+            id: 1,
+            href:'#',
+            text:'Characters' 
+          },
+            // Secondo Link
+          {
+            id: 2,
+            href:'#',
+            text:'Comics' 
+          },
+            // Terzo Link
+          {
+            id: 3,
+            href:'#',
+            text:'Movies' 
+          },
+            // Quarto Link
+          {
+            id: 4,
+            href:'#',
+            text:'Tv' 
+          },
+            // Quinto Link
+          {
+            id: 5,
+            href:'#',
+            text:'Games' 
+          },
+            // Sesto Link
+          {
+            id: 6,
+            href:'#',
+            text:'Collectibles' 
+          },
+            // Settimo Link
+          {
+            id: 7,
+            href:'#',
+            text:'Videos' 
+          },
+            // Ottavo Link
+          {
+            id: 8,
+            href:'#',
+            text:'Fans' 
+          },
+            // nono Link
+          {
+            id: 9,
+            href:'#',
+            text:'News' 
+          },
+          // Decimo Link
+          {
+            id: 10,
+            href:'#',
+            text:'Shop' 
+          },
+        ]
+      }
+    }
 }
 </script>
 
@@ -63,17 +121,29 @@ export default {
     li {
         padding-left: 0;
         margin-bottom: 0;
+        
     }
+
     a {
         text-decoration: none;
+        text-transform: uppercase;
         color: inherit;
         font-size: 0.8rem;
         padding-bottom: 2.3rem;
     }
+
     a:hover {
         border-bottom: 5px solid rgb(0, 213, 246);
         color: rgb(0, 213, 246);
     }
+
+
+    .active {
+        border-bottom: 5px solid rgb(0, 213, 246);
+        color: rgb(0, 213, 246);
+    }
+
+
 }
 
 </style>
