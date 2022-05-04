@@ -2,6 +2,8 @@
   <div id="app">
     <!-- Primo Componente -->
     <HeaderComponent />
+    <!-- Jumbotron -->
+    <JumboComponent />
     <!-- Secondo Componente -->
     <ContentComponent />
     <!-- Terzo Componente -->
@@ -15,6 +17,7 @@
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
+import JumboComponent from '@/components/JumboComponent.vue'
 import ContentComponent from '@/components/ContentComponent.vue'
 import MainComponent from '@/components/MainComponent.vue'
 import UpperFooterComponent from '@/components/UpperFooterComponent.vue'
@@ -24,6 +27,7 @@ export default {
   name: 'App',
   components: {
     HeaderComponent,
+    JumboComponent,
     ContentComponent,
     MainComponent,
     UpperFooterComponent,
