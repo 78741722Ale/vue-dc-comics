@@ -32,46 +32,8 @@ export default {
 
 
 <style lang="scss" scoped>
-
-// altezza
-.h_under_footer {
-    height: 10%;
-}
-// Background
-.bg_under_footer {
-    background-color: #303030;
-    
-}
-// Button laterale
-button {
-    text-transform: uppercase;
-    background-color: inherit;
-    border: 2px solid #0282F9;
-    color: white;
-    font-weight: 600;
-
-}
-
-// Per centrare con flex
-.cent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-// Lista di collegamenti
-ul {
-    // Annidamento
-    li {
-        list-style: none;
-        padding-left: 0;
-    }
-}
-// Follow us
-.follow {
-    font-weight: 900;
-    text-decoration: none;
-}
+// Link al foglio di stile
+@import '@/assets/sass/partials/UnFooter.scss';
 
 </style>
 

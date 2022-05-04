@@ -1,0 +1,37 @@
+
+// Colore di background
+.bg_main {
+    background-color: #0282F9
+}
+
+// Altezza
+.h_main {
+    height: 15%;
+}
+
+// Col-3 
+.col-3 {
+  // Annidamento
+    img {
+        width: 45px;
+        height: 55px;
+    }
+}
+
+// Col 9
+.col-9 {
+  // Annidamento
+    span {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+}
+
+// Common utilities
+.cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

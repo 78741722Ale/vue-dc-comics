@@ -1,0 +1,52 @@
+
+
+// Immagine di background
+#upper_footer {
+    background-image: url("@/assets/img/footer-bg.jpg");
+    background-size: 100% 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.t-left {
+    text-align: left;
+}
+
+// lista non ordinata
+ul {
+    list-style: none;
+    padding-left: 0;
+    color: #9FA3A6;
+    line-height: 1.65rem;
+}
+
+// h della col da 6 di liste
+.h_80 {
+    height: 80%;
+}
+
+// H delle due liste
+.h_70 {
+    height: 70%;
+}
+
+.h_30 {
+    height: 30%;
+}
+
+// List Title style
+.list_title {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+}
+
+// Logo dc
+.dc_logo {
+    background-image: url("@/assets/img/dc-logo-bg.png");
+    background-size: 100% 110%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+

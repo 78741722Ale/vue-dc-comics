@@ -93,57 +93,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// Altezza fissa dell'header
-.h_header {
-    height: 10%;
-}
-
-// Background Header
-.bg_header {
-    background-color: #FFFFFF;
-}
-
-// Dimensioni del logo
-.col-2 {
-    // Annidamento
-    img {
-        width: 75px;
-        height: 75px;
-    }
-}
-
-// Colonna Navbar
-.col-8 {
-    // Annidamento
-    ul {
-        list-style: none;
-    }
-    li {
-        padding-left: 0;
-        margin-bottom: 0;
-        
-    }
-
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: inherit;
-        font-size: 0.8rem;
-        padding-bottom: 2.3rem;
-    }
-
-    a:hover {
-        border-bottom: 5px solid rgb(0, 213, 246);
-        color: rgb(0, 213, 246);
-    }
-
-
-    .active {
-        border-bottom: 5px solid rgb(0, 213, 246);
-        color: rgb(0, 213, 246);
-    }
-
-
-}
+// Link al foglio di stile
+@import '@/assets/sass/partials/header.scss';
 
 </style>
