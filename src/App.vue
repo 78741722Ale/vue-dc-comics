@@ -50,7 +50,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   width: 100vw;
-  height: 100vh;
+  height: 1000px;
 }
 // Qui do stile ma poi lo sposto nei componenti singoli
 // Per ora diviso in region, poi da spostare in partials

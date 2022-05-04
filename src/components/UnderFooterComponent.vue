@@ -1,6 +1,6 @@
 <template>
 <!-- Quinto Componente -->
-    <div class="h_under_footer w-100 bg_under_footer" id="under_footer">
+    <div class="h_under_footer w-100 bg_under_footer z_style" id="under_footer">
         <!-- Container principale -->
         <div class="container h-100">
             <div class="row m-0 w-100 h-100 d-flex justify-content-between">
@@ -68,11 +68,11 @@ ul {
     }
 }
 // Follow us
-
 .follow {
     font-weight: 900;
     text-decoration: none;
 }
+
 
 </style>
 
