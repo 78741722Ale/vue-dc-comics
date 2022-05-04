@@ -10,23 +10,16 @@
             <div class="col-4 d-flex flex-wrap flex-column">
               <!-- upper -->
               <div class="pt-2 ps-2 w-100 h_70">
-                <h4 class="t-left list_title">Dc comics</h4>
+                <h4 v-html="title_1" class="t-left list_title">{{title_1}}</h4>
                 <ul class="t-left">
-                  <li>Characters</li>
-                  <li>Comics</li>
-                  <li>Movies</li>
-                  <li>TV</li>
-                  <li>Games</li>
-                  <li>Videos</li>
-                  <li>News</li>
+                  <li v-for="element in first_element" :key="element">{{element}}</li>
                 </ul>
               </div> 
               <!-- under list -->
               <div class="ps-2 w-100 h_30">
-                <h4 class="t-left list_title">Shop</h4>
+                <h4 v-html="title_2" class="t-left list_title">{{title_2}}</h4>
                 <ul class="t-left">
-                  <li>Shop DC</li>
-                  <li>Shop DC Collectibles</li>
+                  <li v-for="element in second_element" :key="element">{{element}}</li>
                 </ul>
               </div> 
             </div>
@@ -34,19 +27,9 @@
             <div class="col-4">
               <!-- DC list -->
               <div class="pt-2 ps-2 w-100 h-100">
-                <h4 class="t-left list_title">Dc</h4>
+                <h4 v-html="title_3" class="t-left list_title">{{title_3}}</h4>
                 <ul class="t-left">
-                  <li>Terms Of Use</li>
-                  <li>Privacy policy (New)</li>
-                  <li>Ad Choices</li>
-                  <li>Advertising</li>
-                  <li>Jobs</li>
-                  <li>Subscriptions</li>
-                  <li>Talent Workshops</li>
-                  <li>CPSC Certificates</li>
-                  <li>Ratings</li>
-                  <li>Shop Help</li>
-                  <li>Contact us</li>
+                  <li v-for="element in third_element" :key="element">{{element}}</li>
                 </ul>
               </div> 
             </div>
@@ -54,13 +37,9 @@
             <div class="col-4">
               <!-- Sites -->
               <div class="pt-2 ps-2 w-100 h-100">
-                <h4 class="t-left list_title">Sites</h4>
+                <h4 v-html="title_4" class="t-left list_title">{{title_4}}</h4>
                 <ul class="t-left">
-                  <li>DC</li>
-                  <li>MAD Magazine</li>
-                  <li>DC Kids</li>
-                  <li>DC Universe</li>
-                  <li>DC Power Visa</li>
+                  <li v-for="element in fourth_element" :key="element">{{element}}</li>
                 </ul>
               </div>     
             </div>
@@ -76,7 +55,33 @@
 <script>
 export default {
     name: 'UpperFooterComponent',
-    
+    data() {
+      return {
+        // DC Comics
+        title_1: 'Dc Comics',
+        first_element: ['Characters', 'Comics', 'Movies', 'Tv', 'Games', 'Videos', 'News'],
+        // Shop
+        title_2: 'Shop',
+        second_element: ['Shop DC', 'Shop DC Collectibles'],
+        // DC & Therm of Use
+        title_3: 'DC',
+        third_element: [
+          'Terms Of Use', 
+          'Privacy policy (New)', 
+          'Ad Choices',
+          'Advertising',
+          'Jobs',
+          'Subscriptions',
+          'Talent Workshops',
+          'CPSC Certificates',
+          'Ratings',
+          'Shop Help',
+          'Contact us',
+          ],
+        title_4: 'Sites',
+        fourth_element: ['DC','MAD Magazine','DC Kids','DC Universe','DC Power Visa' ]
+      }
+    }
 }
 
 
