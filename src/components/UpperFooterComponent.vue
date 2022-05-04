@@ -34,7 +34,7 @@
             <div class="col-4">
               <!-- DC list -->
               <div class="pt-2 ps-2 w-100 h-100">
-                <h4 class="t-left list_title">Dc comics</h4>
+                <h4 class="t-left list_title">Dc</h4>
                 <ul class="t-left">
                   <li>Terms Of Use</li>
                   <li>Privacy policy (New)</li>
@@ -54,7 +54,7 @@
             <div class="col-4">
               <!-- Sites -->
               <div class="pt-2 ps-2 w-100 h-100">
-                <h4 class="t-left list_title">Dc comics</h4>
+                <h4 class="t-left list_title">Sites</h4>
                 <ul class="t-left">
                   <li>DC</li>
                   <li>MAD Magazine</li>
@@ -66,7 +66,7 @@
             </div>
           </div>
           <!-- Logo Dc -->
-          <div class="col-4 dc_logo h-100 d-flex justify-content-center align-items-center">
+          <div class="col-5 dc_logo h-100 d-flex justify-content-center align-items-center">
           </div>
         </div>
       </div>
@@ -125,12 +125,12 @@ ul {
 }
 
 // Logo dc
-
 .dc_logo {
   background-image: url("@/assets/img/dc-logo-bg.png");
-  background-size: 100% 100%;
+  background-size: 100% 110%;
   object-fit: contain;
   background-repeat: no-repeat;
+  background-position: center center;
   }
 
 
