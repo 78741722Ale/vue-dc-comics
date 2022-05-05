@@ -4,21 +4,35 @@
         <!-- Banner -->
         <button class="abs banner">Current Series</button>
         <!-- Container principale -->
-        <div class="container h-100">
+        <div class="container h-100 pb-2">
             <div class="row gap-3 gy-2 m-0 h-100 d-flex justify-content-center align-items-center ">
                 <!-- Card -->
-                <div v-for="(element, index) in listCard" :key="index" class="col-2 bg-danger card_item">
+                <CardComponent v-for= "(element, index) in listCard" 
+                :image="element.thumb"
+                :bigText="element.series"
+                :key="index"/>
+                <!-- Old version, without Props -->
+                <!-- <div v-for="(element, index) in listCard" :key="index" class="col-2 bg-danger card_item">
                     <img :src="element.thumb" alt="">
                     <h5>{{element.series}}</h5>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 </template>
 
 <script>
+
+import CardComponent from '@/components/CardComponent.vue'
+
+
 export default {
     name: 'ContentComponent',
+    // Componente card
+    components: {
+        CardComponent
+    },
+    
     data() {
         return {
             listCard: [
