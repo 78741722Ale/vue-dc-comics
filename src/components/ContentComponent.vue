@@ -5,9 +5,9 @@
         <button class="abs banner">Current Series</button>
         <!-- Container principale -->
         <div class="container h-100 pb-2">
-            <div class="row gap-3 gy-2 m-0 h-100 d-flex justify-content-center align-items-center ">
+            <div class="row gap-3 gy-2 m-0 d-flex justify-content-center align-items-start ">
                 <!-- Card -->
-                <CardComponent v-for= "(element, index) in listCard" 
+                <CardComponent v-for= "(element, index) in listCard" class="card_space"
                 :image="element.thumb"
                 :bigText="element.series"
                 :key="index"/>
@@ -18,11 +18,12 @@
                 </div> -->
             </div>
         </div>
+        <!-- Banner -->
+        <button class="load">Load More</button>
     </div>
 </template>
 
 <script>
-
 import CardComponent from '@/components/CardComponent.vue'
 
 
@@ -113,7 +114,6 @@ export default {
     }
 }
 </script>
-
 
 <style lang="scss" scoped>
 // Link al foglio di stile

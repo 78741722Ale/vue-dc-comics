@@ -1,7 +1,7 @@
 
 /*#region Content */
 .h_content {
-    height: 650px;
+    height: 780px;
 }
 
 // Colonna iniziale di contenimento
@@ -26,7 +26,14 @@
     transform: translate(0%, -50%);
 }
 
-.banner {
+// Margin Card component
+.card_space {
+    margin-bottom: 4rem;
+}
+
+
+.banner,
+.load {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -36,6 +43,15 @@
     padding:10px 30px 10px 30px;
     border:0
 }
+
+.load{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
 
 .card_item {
     height: 200px;
